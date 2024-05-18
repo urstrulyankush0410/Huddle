@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(images/bg-hero-desktop.svg);
+  background-color: hsl(193, 100%, 96%);
+  padding: 2%;
+}
+
+nav button a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+nav button {
+  font-size: 10px;
+  padding: 4px;
+  border-radius: 40px;
+  width: 10%;
+  border: none;
+  background-color: white;
+}
+
+.Top-most {
+  display: flex;
+  width: 100%;
+  background-color: hsl(193, 100%, 96%);
+  padding: 3%;
+  background-image: url(images/bg-hero-desktop.svg);
+}
+
+.Build-sec,
+.Build-img {
+  width: 50%;
+}
+
+.Build-img img,
+.firstone-img img,
+.secondone-img img,
+.thirdone-img img {
+  width: 100%;
+}
+
+h1,
+h3,
+h2,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer
+}
+
+.Build-sec {
+  padding: 2.4%;
+}
+
+nav img {
+  margin-left: 3.4%;
+}
+
+.Top-most button {
+  background-color: hsl(322, 100%, 66%);
+  width: 58%;
+  border: none;
+  height: 10%;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.Mid-blocks,
+.Mid-blocks2,
+.Mid-blocks3 {
+  width: 80vw;
+  /* justify-content: center; */
+  display: flex;
+  margin: auto;
+  padding: 2%;
+  /* border: 2px solid rgb(220, 220, 220); */
+  margin-top: 5rem;
+  box-shadow: 2px 2px 8px 2px rgb(241, 241, 241);
+}
+
+.firstone-paragraph,
+.firstone-img {
+  width: 50%;
+}
+
+.firstone-paragraph,
+.secondone-paragraph,
+.thirdone-paragraph {
+  /* text-align: center;0 */
+  justify-content: center;
+  margin: auto;
+  padding: 6%;
+}
+
+.Readybtn-toggle {
+  position: relative;
+  border: 2px solid rgb(241, 241, 241);
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2%;
+  /* box-shadow: 0px 0px 0px 0px rgb(241, 241, 241); */
+  border-radius: 4px;
+  margin-bottom: -45px;
+  background-color: white;
+}
+
+.Readybtn-toggle button {
+  background-color: hsl(322, 100%, 66%);
+  width: 38%;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+footer {
+  display: flex;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  padding: 8%;
+  justify-content: space-between;
+}
+
+/* .logo-side {
+  width: 30%;
+} */
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+}
+
+footer img {
+  margin-top: 1rem;
+}
+
+.social-icons,
+.about-side,
+.blog-side {
+  margin-top: 5rem;
+
+}
+
+button:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 10px 1px rgb(234, 234, 234);
+}
+
+.social-icons i:hover {
+  color: rgb(219, 60, 129)
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.logo-side-flex {
+  list-style: none;
+}
+li a {
+  color: white;
+}
+
+@media (max-width:490px) {
+  .Top-most {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Build-sec {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .Build-img {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .Build-sec p {
+    font-size: 20px;
+    color: rgb(77, 77, 77);
+  }
+
+  .Build-sec button {
+    height: 40px;
+  }
+
+  nav button {
+    /* color: white; */
+    width: 20%;
+    height: 29px;
+  }
+
+  .Mid-blocks , .Mid-blocks3{
+    flex-direction: column-reverse;
+  }
+
+  .firstone-img,
+  .secondone-img,
+  .thirdone-img {
+    width: 100%;
+    padding: 7%;
+    /* margin: auto; */
+  }
+
+  .firstone-paragraph,
+  .secondone-paragraph,
+  .thirdone-paragraph {
+    width: 100%;
+    text-align: center;
+    padding: 11%;
+  }
+
+  .Mid-blocks2 {
+    flex-direction: column;
+  }
+  .Readybtn-toggle{
+    width: 94%;
+    border-radius: 15px;
+    /* height: auto; */
+  }
+  .logo-side img{
+    margin-top: 3rem;
+  }
+  footer{
+    flex-direction: column;
+  }
+  .logo-side img{
+    z-index: 1;
+  }
+  .about-side{
+    z-index: 0;
+  }
+}
